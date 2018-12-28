@@ -1,0 +1,9 @@
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye\bin\Debug\GoldenEye.exe.config
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye\bin\Debug\GoldenEye.exe
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye\bin\Debug\GoldenEye.pdb
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye\obj\Debug\GoldenEye.Chat.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye\obj\Debug\GoldenEye.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye\obj\Debug\GoldenEye.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye\obj\Debug\GoldenEye.exe
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye\obj\Debug\GoldenEye.pdb
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye\obj\Debug\GoldenEye.csprojAssemblyReference.cache

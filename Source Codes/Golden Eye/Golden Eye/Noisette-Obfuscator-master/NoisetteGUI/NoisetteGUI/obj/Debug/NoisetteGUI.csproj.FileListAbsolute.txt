@@ -1,0 +1,60 @@
+c:\users\xenocodere\documents\visual studio 2015\Projects\NoisetteGUI\NoisetteGUI\bin\Debug\NoisetteGUI.exe.config
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\NoisetteGUI\NoisetteGUI\bin\Debug\NoisetteGUI.exe
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\NoisetteGUI\NoisetteGUI\bin\Debug\NoisetteGUI.pdb
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\NoisetteGUI\NoisetteGUI\obj\Debug\NoisetteGUI.csprojResolveAssemblyReference.cache
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\NoisetteGUI\NoisetteGUI\obj\Debug\MainWindow.g.cs
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\NoisetteGUI\NoisetteGUI\obj\Debug\App.g.cs
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\NoisetteGUI\NoisetteGUI\obj\Debug\NoisetteGUI_MarkupCompile.cache
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\NoisetteGUI\NoisetteGUI\obj\Debug\NoisetteGUI_MarkupCompile.lref
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\NoisetteGUI\NoisetteGUI\obj\Debug\MainWindow.baml
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\NoisetteGUI\NoisetteGUI\obj\Debug\NoisetteGUI.g.resources
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\NoisetteGUI\NoisetteGUI\obj\Debug\NoisetteGUI.Properties.Resources.resources
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\NoisetteGUI\NoisetteGUI\obj\Debug\NoisetteGUI.csproj.GenerateResource.Cache
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\NoisetteGUI\NoisetteGUI\obj\Debug\NoisetteGUI.exe
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\NoisetteGUI\NoisetteGUI\obj\Debug\NoisetteGUI.pdb
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\NoisetteGUI\NoisetteGUI\obj\Debug\Window1.g.cs
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\NoisetteGUI\NoisetteGUI\bin\Debug\dnlib.dll
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\NoisetteGUI\NoisetteGUI\bin\Debug\dnlib.pdb
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\NoisetteGUI\NoisetteGUI\bin\Debug\dnlib.xml
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\NoisetteGUI\NoisetteGUI\obj\Debug\Window1.baml
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\Noisette-Obfuscator\NoisetteGUI\NoisetteGUI\bin\Debug\NoisetteGUI.exe.config
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\Noisette-Obfuscator\NoisetteGUI\Debug\bin\NoisetteGUI.exe.config
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\Noisette-Obfuscator\NoisetteGUI\Debug\bin\NoisetteGUI.XML
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\Noisette-Obfuscator\NoisetteGUI\Debug\bin\NoisetteGUI.exe
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\Noisette-Obfuscator\NoisetteGUI\Debug\bin\NoisetteGUI.pdb
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\Noisette-Obfuscator\Debug\bin\NoisetteGUI.exe.config
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\Noisette-Obfuscator\Debug\bin\NoisetteGUI.XML
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\Noisette-Obfuscator\Debug\bin\NoisetteGUI.exe
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\Noisette-Obfuscator\Debug\bin\NoisetteGUI.pdb
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\Noisette-Obfuscator\NoisetteGUI\NoisetteGUI\obj\Debug\NoisetteGUI.csprojResolveAssemblyReference.cache
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\Noisette-Obfuscator\NoisetteGUI\NoisetteGUI\obj\Debug\MainWindow.g.cs
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\Noisette-Obfuscator\NoisetteGUI\NoisetteGUI\obj\Debug\EndWindow.g.cs
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\Noisette-Obfuscator\NoisetteGUI\NoisetteGUI\obj\Debug\App.g.cs
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\Noisette-Obfuscator\NoisetteGUI\NoisetteGUI\obj\Debug\NoisetteGUI_MarkupCompile.cache
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\Noisette-Obfuscator\NoisetteGUI\NoisetteGUI\obj\Debug\NoisetteGUI_MarkupCompile.lref
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\Noisette-Obfuscator\NoisetteGUI\NoisetteGUI\obj\Debug\MainWindow.baml
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\Noisette-Obfuscator\NoisetteGUI\NoisetteGUI\obj\Debug\EndWindow.baml
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\Noisette-Obfuscator\NoisetteGUI\NoisetteGUI\obj\Debug\NoisetteGUI.g.resources
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\Noisette-Obfuscator\NoisetteGUI\NoisetteGUI\obj\Debug\NoisetteGUI.Properties.Resources.resources
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\Noisette-Obfuscator\NoisetteGUI\NoisetteGUI\obj\Debug\NoisetteGUI.csproj.GenerateResource.Cache
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\Noisette-Obfuscator\NoisetteGUI\NoisetteGUI\obj\Debug\NoisetteGUI.exe
+C:\Users\XenocodeRE\Documents\Visual Studio 2015\Projects\Noisette-Obfuscator\NoisetteGUI\NoisetteGUI\obj\Debug\NoisetteGUI.pdb
+C:\Users\Admin\Desktop\Golden Eye\Noisette-Obfuscator-master\Debug\bin\NoisetteGUI.exe.config
+C:\Users\Admin\Desktop\Golden Eye\Noisette-Obfuscator-master\Debug\bin\NoisetteGUI.XML
+C:\Users\Admin\Desktop\Golden Eye\Noisette-Obfuscator-master\Debug\bin\NoisetteGUI.exe
+C:\Users\Admin\Desktop\Golden Eye\Noisette-Obfuscator-master\Debug\bin\NoisetteGUI.pdb
+C:\Users\Admin\Desktop\Golden Eye\Noisette-Obfuscator-master\NoisetteGUI\NoisetteGUI\obj\Debug\NoisetteGUI.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\Golden Eye\Noisette-Obfuscator-master\NoisetteGUI\NoisetteGUI\obj\Debug\MainWindow.g.cs
+C:\Users\Admin\Desktop\Golden Eye\Noisette-Obfuscator-master\NoisetteGUI\NoisetteGUI\obj\Debug\EndWindow.g.cs
+C:\Users\Admin\Desktop\Golden Eye\Noisette-Obfuscator-master\NoisetteGUI\NoisetteGUI\obj\Debug\App.g.cs
+C:\Users\Admin\Desktop\Golden Eye\Noisette-Obfuscator-master\NoisetteGUI\NoisetteGUI\obj\Debug\NoisetteGUI_MarkupCompile.cache
+C:\Users\Admin\Desktop\Golden Eye\Noisette-Obfuscator-master\NoisetteGUI\NoisetteGUI\obj\Debug\NoisetteGUI_MarkupCompile.lref
+C:\Users\Admin\Desktop\Golden Eye\Noisette-Obfuscator-master\NoisetteGUI\NoisetteGUI\obj\Debug\MainWindow.baml
+C:\Users\Admin\Desktop\Golden Eye\Noisette-Obfuscator-master\NoisetteGUI\NoisetteGUI\obj\Debug\EndWindow.baml
+C:\Users\Admin\Desktop\Golden Eye\Noisette-Obfuscator-master\NoisetteGUI\NoisetteGUI\obj\Debug\NoisetteGUI.g.resources
+C:\Users\Admin\Desktop\Golden Eye\Noisette-Obfuscator-master\NoisetteGUI\NoisetteGUI\obj\Debug\NoisetteGUI.Properties.Resources.resources
+C:\Users\Admin\Desktop\Golden Eye\Noisette-Obfuscator-master\NoisetteGUI\NoisetteGUI\obj\Debug\NoisetteGUI.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Golden Eye\Noisette-Obfuscator-master\NoisetteGUI\NoisetteGUI\obj\Debug\NoisetteGUI.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Golden Eye\Noisette-Obfuscator-master\NoisetteGUI\NoisetteGUI\obj\Debug\NoisetteGUI.csproj.CopyComplete
+C:\Users\Admin\Desktop\Golden Eye\Noisette-Obfuscator-master\NoisetteGUI\NoisetteGUI\obj\Debug\NoisetteGUI.exe
+C:\Users\Admin\Desktop\Golden Eye\Noisette-Obfuscator-master\NoisetteGUI\NoisetteGUI\obj\Debug\NoisetteGUI.pdb

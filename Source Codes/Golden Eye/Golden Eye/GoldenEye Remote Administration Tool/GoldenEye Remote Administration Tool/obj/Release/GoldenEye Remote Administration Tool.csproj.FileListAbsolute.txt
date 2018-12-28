@@ -1,0 +1,18 @@
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Release\GoldenEye Remote Administration Tool.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Release\GoldenEye_Remote_Administration_Tool.Form1.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Release\HunaRAT.Forms.ClientManager.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Release\HunaRAT.Forms.ExecuteFile.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Release\GoldenEye_Remote_Administration_Tool.Forms.FileSearcherDialog.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Release\GoldenEye_Remote_Administration_Tool.Forms.License.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Release\GoldenEye_Remote_Administration_Tool.Forms.MessageBoxForm.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Release\GoldenEye_Remote_Administration_Tool.Forms.OnJoinCommandsDialog.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Release\GoldenEye_Remote_Administration_Tool.Forms.RemoteChat.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Release\HunaRAT.Forms.RemoteDesktop.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Release\GoldenEye_Remote_Administration_Tool.Forms.RemoteScripting.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Release\GoldenEye_Remote_Administration_Tool.Forms.Reverse_Proxy.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Release\HunaRAT.Forms.SystemFunctions.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Release\HunaRAT.Forms.UAC.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Release\GoldenEye_Remote_Administration_Tool.Forms.VisitWebsite.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Release\GoldenEye_Remote_Administration_Tool.Properties.Resources.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Release\GoldenEye Remote Administration Tool.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Release\GoldenEye Remote Administration Tool.csproj.CoreCompileInputs.cache

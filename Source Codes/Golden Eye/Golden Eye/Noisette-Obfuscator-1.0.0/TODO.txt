@@ -1,0 +1,3 @@
+-créer un array et l'utiliser dans une méthode qui contiendras les constants d'autres méthodes
+-invok dynamique des méthodes via Reflection Emit
+-x86 encoded strings

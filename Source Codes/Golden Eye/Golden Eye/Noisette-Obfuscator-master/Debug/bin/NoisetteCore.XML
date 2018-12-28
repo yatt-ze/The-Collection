@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NoisetteCore</name>
+    </assembly>
+    <members>
+        <member name="M:NoisetteCore.Core.Helper.IsValidMethod(dnlib.DotNet.MethodDef)">
+            <summary>
+            A simple Boolean function to check if choosen method
+            can be subject to outlinning or not
+            </summary>
+            <param name="method"><see cref="T:dnlib.DotNet.MethodDef"/></param>
+            <returns></returns>
+        </member>
+        <member name="T:NoisetteCore.Core.Property">
+            <summary>
+                Provide every used fields and other needed ojects
+            </summary>
+        </member>
+        <member name="P:NoisetteCore.Core.Property.opts">
+            <summary>
+                The modulewriter used when saving / writting modified assembly
+            </summary>
+        </member>
+        <member name="P:NoisetteCore.Core.Property.DirectoryName">
+            <summary>
+            Directory path where the file is in
+            </summary>
+        </member>
+        <member name="F:NoisetteCore.Core.Property.ContainsReflectionReference">
+            <summary>
+            A list which will contains <see cref="T:dnlib.DotNet.MethodDef"/> who may contains
+            <see cref="N:System.Reflection"/> references
+            </summary>
+        </member>
+        <member name="F:NoisetteCore.Core.Property.ContainsWinformReference">
+            <summary>
+            A list which will contains <see cref="T:dnlib.DotNet.MethodDef"/> who may containns
+            <see cref="!:System.Windows.Forms"/> references
+            </summary>
+        </member>
+        <member name="T:NoisetteCore.Protection.AntiTampering.Inject_Helper.InjectHelper">
+            <summary>
+                Provides methods to inject a <see cref="T:dnlib.DotNet.TypeDef" /> into another module.
+            </summary>
+        </member>
+        <member name="M:NoisetteCore.Protection.AntiTampering.Inject_Helper.InjectHelper.Clone(dnlib.DotNet.TypeDef)">
+            <summary>
+                Clones the specified origin TypeDef.
+            </summary>
+            <param name="origin">The origin TypeDef.</param>
+            <returns>The cloned TypeDef.</returns>
+        </member>
+        <member name="M:NoisetteCore.Protection.AntiTampering.Inject_Helper.InjectHelper.Clone(dnlib.DotNet.MethodDef)">
+            <summary>
+                Clones the specified origin MethodDef.
+            </summary>
+            <param name="origin">The origin MethodDef.</param>
+            <returns>The cloned MethodDef.</returns>
+        </member>
+        <member name="M:NoisetteCore.Protection.AntiTampering.Inject_Helper.InjectHelper.Clone(dnlib.DotNet.FieldDef)">
+            <summary>
+                Clones the specified origin FieldDef.
+            </summary>
+            <param name="origin">The origin FieldDef.</param>
+            <returns>The cloned FieldDef.</returns>
+        </member>
+        <member name="M:NoisetteCore.Protection.AntiTampering.Inject_Helper.InjectHelper.PopulateContext(dnlib.DotNet.TypeDef,NoisetteCore.Protection.AntiTampering.Inject_Helper.InjectHelper.InjectContext)">
+            <summary>
+                Populates the context mappings.
+            </summary>
+            <param name="typeDef">The origin TypeDef.</param>
+            <param name="ctx">The injection context.</param>
+            <returns>The new TypeDef.</returns>
+        </member>
+        <member name="M:NoisetteCore.Protection.AntiTampering.Inject_Helper.InjectHelper.CopyTypeDef(dnlib.DotNet.TypeDef,NoisetteCore.Protection.AntiTampering.Inject_Helper.InjectHelper.InjectContext)">
+            <summary>
+                Copies the information from the origin type to injected type.
+            </summary>
+            <param name="typeDef">The origin TypeDef.</param>
+            <param name="ctx">The injection context.</param>
+        </member>
+        <member name="M:NoisetteCore.Protection.AntiTampering.Inject_Helper.InjectHelper.CopyMethodDef(dnlib.DotNet.MethodDef,NoisetteCore.Protection.AntiTampering.Inject_Helper.InjectHelper.InjectContext)">
+            <summary>
+                Copies the information from the origin method to injected method.
+            </summary>
+            <param name="methodDef">The origin MethodDef.</param>
+            <param name="ctx">The injection context.</param>
+        </member>
+        <member name="M:NoisetteCore.Protection.AntiTampering.Inject_Helper.InjectHelper.CopyFieldDef(dnlib.DotNet.FieldDef,NoisetteCore.Protection.AntiTampering.Inject_Helper.InjectHelper.InjectContext)">
+            <summary>
+                Copies the information from the origin field to injected field.
+            </summary>
+            <param name="fieldDef">The origin FieldDef.</param>
+            <param name="ctx">The injection context.</param>
+        </member>
+        <member name="M:NoisetteCore.Protection.AntiTampering.Inject_Helper.InjectHelper.Copy(dnlib.DotNet.TypeDef,NoisetteCore.Protection.AntiTampering.Inject_Helper.InjectHelper.InjectContext,System.Boolean)">
+            <summary>
+                Copies the information to the injected definitions.
+            </summary>
+            <param name="typeDef">The origin TypeDef.</param>
+            <param name="ctx">The injection context.</param>
+            <param name="copySelf">if set to <c>true</c>, copy information of <paramref name="typeDef" />.</param>
+        </member>
+        <member name="M:NoisetteCore.Protection.AntiTampering.Inject_Helper.InjectHelper.Inject(dnlib.DotNet.TypeDef,dnlib.DotNet.ModuleDef)">
+            <summary>
+                Injects the specified TypeDef to another module.
+            </summary>
+            <param name="typeDef">The source TypeDef.</param>
+            <param name="target">The target module.</param>
+            <returns>The injected TypeDef.</returns>
+        </member>
+        <member name="M:NoisetteCore.Protection.AntiTampering.Inject_Helper.InjectHelper.Inject(dnlib.DotNet.MethodDef,dnlib.DotNet.ModuleDef)">
+            <summary>
+                Injects the specified MethodDef to another module.
+            </summary>
+            <param name="methodDef">The source MethodDef.</param>
+            <param name="target">The target module.</param>
+            <returns>The injected MethodDef.</returns>
+        </member>
+        <member name="M:NoisetteCore.Protection.AntiTampering.Inject_Helper.InjectHelper.Inject(dnlib.DotNet.TypeDef,dnlib.DotNet.TypeDef,dnlib.DotNet.ModuleDef)">
+            <summary>
+                Injects the members of specified TypeDef to another module.
+            </summary>
+            <param name="typeDef">The source TypeDef.</param>
+            <param name="newType">The new type.</param>
+            <param name="target">The target module.</param>
+            <returns>Injected members.</returns>
+        </member>
+        <member name="T:NoisetteCore.Protection.AntiTampering.Inject_Helper.InjectHelper.InjectContext">
+            <summary>
+                Context of the injection process.
+            </summary>
+        </member>
+        <member name="F:NoisetteCore.Protection.AntiTampering.Inject_Helper.InjectHelper.InjectContext.Map">
+            <summary>
+                The mapping of origin definitions to injected definitions.
+            </summary>
+        </member>
+        <member name="F:NoisetteCore.Protection.AntiTampering.Inject_Helper.InjectHelper.InjectContext.OriginModule">
+            <summary>
+                The module which source type originated from.
+            </summary>
+        </member>
+        <member name="F:NoisetteCore.Protection.AntiTampering.Inject_Helper.InjectHelper.InjectContext.TargetModule">
+            <summary>
+                The module which source type is being injected to.
+            </summary>
+        </member>
+        <member name="F:NoisetteCore.Protection.AntiTampering.Inject_Helper.InjectHelper.InjectContext.importer">
+            <summary>
+                The importer.
+            </summary>
+        </member>
+        <member name="M:NoisetteCore.Protection.AntiTampering.Inject_Helper.InjectHelper.InjectContext.#ctor(dnlib.DotNet.ModuleDef,dnlib.DotNet.ModuleDef)">
+            <summary>
+                Initializes a new instance of the <see cref="T:NoisetteCore.Protection.AntiTampering.Inject_Helper.InjectHelper.InjectContext" /> class.
+            </summary>
+            <param name="module">The origin module.</param>
+            <param name="target">The target module.</param>
+        </member>
+        <member name="P:NoisetteCore.Protection.AntiTampering.Inject_Helper.InjectHelper.InjectContext.Importer">
+            <summary>
+                Gets the importer.
+            </summary>
+            <value>The importer.</value>
+        </member>
+        <member name="M:NoisetteCore.Protection.AntiTampering.Inject_Helper.InjectHelper.InjectContext.Resolve(dnlib.DotNet.TypeDef)">
+            <inheritdoc />
+        </member>
+        <member name="M:NoisetteCore.Protection.AntiTampering.Inject_Helper.InjectHelper.InjectContext.Resolve(dnlib.DotNet.MethodDef)">
+            <inheritdoc />
+        </member>
+        <member name="M:NoisetteCore.Protection.AntiTampering.Inject_Helper.InjectHelper.InjectContext.Resolve(dnlib.DotNet.FieldDef)">
+            <inheritdoc />
+        </member>
+        <member name="M:Noisette.Obfuscation.ObfuscationAnalyzer.ContainsReflection(dnlib.DotNet.MethodDef)">
+            <summary>
+            Check for <see cref="N:System.Reflection"/> references in the file
+            </summary>
+            <param name="module">the file to protect</param>
+        </member>
+        <member name="T:NoisetteCoreCore.Properties.Resources">
+            <summary>
+              Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+            </summary>
+        </member>
+        <member name="P:NoisetteCoreCore.Properties.Resources.ResourceManager">
+            <summary>
+              Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+            </summary>
+        </member>
+        <member name="P:NoisetteCoreCore.Properties.Resources.Culture">
+            <summary>
+              Remplace la propriété CurrentUICulture du thread actuel pour toutes
+              les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+            </summary>
+        </member>
+        <member name="P:NoisetteCoreCore.Properties.Resources._lock">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:NoisetteCoreCore.Properties.Resources.btn_green">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:NoisetteCoreCore.Properties.Resources.btn_red">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:NoisetteCoreCore.Properties.Resources.close_">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:NoisetteCoreCore.Properties.Resources.max_">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:NoisetteCoreCore.Properties.Resources.mix_">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:NoisetteCoreCore.Properties.Resources.noisette_logo_white">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,64 @@
+C:\Users\Admin\Desktop\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\bin\Debug\GoldenEye Remote Administration Tool.exe.config
+C:\Users\Admin\Desktop\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\bin\Debug\GoldenEye Remote Administration Tool.exe
+C:\Users\Admin\Desktop\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\bin\Debug\GoldenEye Remote Administration Tool.pdb
+C:\Users\Admin\Desktop\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye Remote Administration Tool.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye_Remote_Administration_Tool.Properties.Resources.resources
+C:\Users\Admin\Desktop\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye Remote Administration Tool.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye Remote Administration Tool.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye Remote Administration Tool.exe
+C:\Users\Admin\Desktop\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye Remote Administration Tool.pdb
+C:\Users\Admin\Desktop\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\bin\Debug\VelyseTheme.dll
+C:\Users\Admin\Desktop\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye Remote Administration Tool.csproj.CopyComplete
+C:\Users\Admin\Desktop\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye_Remote_Administration_Tool.Form1.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\bin\Debug\GoldenEye Remote Administration Tool.exe.config
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\bin\Debug\GoldenEye Remote Administration Tool.exe
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\bin\Debug\GoldenEye Remote Administration Tool.pdb
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye_Remote_Administration_Tool.Form1.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\HunaRAT.Forms.ClientManager.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\HunaRAT.Forms.ExecuteFile.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye_Remote_Administration_Tool.Forms.FileSearcherDialog.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye_Remote_Administration_Tool.Forms.MessageBoxForm.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye_Remote_Administration_Tool.Forms.OnJoinCommandsDialog.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye_Remote_Administration_Tool.Forms.RemoteChat.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\HunaRAT.Forms.RemoteDesktop.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye_Remote_Administration_Tool.Forms.RemoteScripting.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye_Remote_Administration_Tool.Forms.Reverse_Proxy.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\HunaRAT.Forms.SystemFunctions.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\HunaRAT.Forms.UAC.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye_Remote_Administration_Tool.Forms.VisitWebsite.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye_Remote_Administration_Tool.Properties.Resources.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye Remote Administration Tool.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye Remote Administration Tool.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye Remote Administration Tool.csproj.CopyComplete
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye Remote Administration Tool.exe
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye Remote Administration Tool.pdb
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye_Remote_Administration_Tool.Forms.License.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye_Remote_Administration_Tool.Form2.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye_Remote_Administration_Tool.Forms.Keylogger.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye Remote Administration Tool.csprojAssemblyReference.cache
+D:\Backup\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\bin\Debug\GoldenEye Remote Administration Tool.exe.config
+D:\Backup\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\bin\Debug\GoldenEye Remote Administration Tool.exe
+D:\Backup\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\bin\Debug\GoldenEye Remote Administration Tool.pdb
+D:\Backup\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye Remote Administration Tool.csprojAssemblyReference.cache
+D:\Backup\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye_Remote_Administration_Tool.Form1.resources
+D:\Backup\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye_Remote_Administration_Tool.Form2.resources
+D:\Backup\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\HunaRAT.Forms.ClientManager.resources
+D:\Backup\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\HunaRAT.Forms.ExecuteFile.resources
+D:\Backup\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye_Remote_Administration_Tool.Forms.FileSearcherDialog.resources
+D:\Backup\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye_Remote_Administration_Tool.Forms.Keylogger.resources
+D:\Backup\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye_Remote_Administration_Tool.Forms.License.resources
+D:\Backup\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye_Remote_Administration_Tool.Forms.MessageBoxForm.resources
+D:\Backup\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye_Remote_Administration_Tool.Forms.OnJoinCommandsDialog.resources
+D:\Backup\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye_Remote_Administration_Tool.Forms.RemoteChat.resources
+D:\Backup\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\HunaRAT.Forms.RemoteDesktop.resources
+D:\Backup\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye_Remote_Administration_Tool.Forms.RemoteScripting.resources
+D:\Backup\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye_Remote_Administration_Tool.Forms.Reverse_Proxy.resources
+D:\Backup\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\HunaRAT.Forms.SystemFunctions.resources
+D:\Backup\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\HunaRAT.Forms.UAC.resources
+D:\Backup\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye_Remote_Administration_Tool.Forms.VisitWebsite.resources
+D:\Backup\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye_Remote_Administration_Tool.Properties.Resources.resources
+D:\Backup\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye Remote Administration Tool.csproj.GenerateResource.cache
+D:\Backup\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye Remote Administration Tool.csproj.CoreCompileInputs.cache
+D:\Backup\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye Remote Administration Tool.csproj.CopyComplete
+D:\Backup\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye Remote Administration Tool.exe
+D:\Backup\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Remote Administration Tool\obj\Debug\GoldenEye Remote Administration Tool.pdb

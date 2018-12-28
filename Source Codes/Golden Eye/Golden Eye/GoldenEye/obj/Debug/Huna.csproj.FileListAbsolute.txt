@@ -1,0 +1,7 @@
+C:\Users\Admin\Desktop\Huna System Administration Tool\Huna\bin\Debug\Huna.exe.config
+C:\Users\Admin\Desktop\Huna System Administration Tool\Huna\bin\Debug\Huna.exe
+C:\Users\Admin\Desktop\Huna System Administration Tool\Huna\bin\Debug\Huna.pdb
+C:\Users\Admin\Desktop\Huna System Administration Tool\Huna\obj\Debug\Huna.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Huna System Administration Tool\Huna\obj\Debug\Huna.exe
+C:\Users\Admin\Desktop\Huna System Administration Tool\Huna\obj\Debug\Huna.pdb
+C:\Users\Admin\Desktop\Huna System Administration Tool\Huna\obj\Debug\Huna.csprojAssemblyReference.cache

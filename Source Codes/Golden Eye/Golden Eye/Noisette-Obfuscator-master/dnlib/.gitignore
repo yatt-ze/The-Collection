@@ -1,0 +1,10 @@
+*~
+*/obj/
+*.csproj.user
+*.sdf
+*.opensdf
+*.suo
+/Debug/
+/Release/
+/Examples/bin/
+*.tmp_proj

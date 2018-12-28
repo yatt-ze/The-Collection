@@ -1,0 +1,38 @@
+﻿<Window x:Class="NoisetteGUI.EndWindow"
+ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NoisetteGUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="404" Width="320" AllowsTransparency="True" WindowStyle="None" Background="{x:Null}" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" ScrollViewer.VerticalScrollBarVisibility="Disabled" Icon="Resources/imageedit_1_6269448753.png" AllowDrop="True" MouseLeftButtonDown="DragTheForm">
+    <Grid Margin="0,4,0,-4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="301*" />
+            <ColumnDefinition Width="410*" />
+        </Grid.ColumnDefinitions>
+
+        <Rectangle x:Name="Rct_DarkGrey" Fill="#FF2B272C" RadiusY="5" RadiusX="5" Stroke="#FF2B272C" Grid.ColumnSpan="2" d:LayoutOverrides="VerticalAlignment" ClipToBounds="True" Margin="0,0,0,10" MouseLeftButtonDown="DragTheForm" />
+        <Rectangle x:Name="Rct_LightGrey" Fill="#FF37373C" RadiusY="3" RadiusX="3" Stroke="#FF37373C" Grid.ColumnSpan="2" ClipToBounds="True" Margin="0,125.5,0,10" d:LayoutOverrides="VerticalAlignment" />
+
+        <Ellipse x:Name="CloseButton" Fill="#FFFF6059" HorizontalAlignment="Left" Height="11.01" Margin="10,10,0,0" Stroke="#FFFF6059" VerticalAlignment="Top" Width="11.01" OpacityMask="#FFFF6059" MouseDown="ExitButton_MouseEnter" RenderTransformOrigin="0.6,0.38" />
+        <Ellipse x:Name="MinimizeButton" Fill="#FFFFBF2F" HorizontalAlignment="Left" Height="11.01" Margin="26.01,10,0,0" Stroke="#FFFFBF2F" VerticalAlignment="Top" Width="11.01" OpacityMask="#FFFFBF2F" MouseDown="MinimizeButton_MouseDown" />
+        <Ellipse x:Name="MaximizeButton" Fill="#FF29C941" HorizontalAlignment="Left" Height="11.26" Margin="42.02,10,0,0" Stroke="#FF29C941" VerticalAlignment="Top" Width="11.26" OpacityMask="#FF29C941" MouseDown="MaximizeButton_MouseDown" />
+        <Rectangle x:Name="Rct_gapfiller" Fill="#FF37373C" Height="9.5" Margin="0,120,0,0" Stroke="#FF37373C" VerticalAlignment="Top" Grid.ColumnSpan="2" />
+        <Rectangle x:Name="Rct_surroudn_log" Grid.ColumnSpan="2" Fill="White" Margin="20,140,20,84" Stroke="White" RadiusX="3" RadiusY="3" />
+        <RichTextBox x:Name="LogTXT" x:FieldModifier="public" Margin="26.01,150,30,94" BorderThickness="0" Grid.ColumnSpan="2" FontFamily="Verdana" IsReadOnly="True">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox" />
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Rectangle x:Name="NoError_btn" x:FieldModifier="public" Grid.ColumnSpan="2" Fill="#FF01E576" Height="40" Margin="21.01,0,20,24" Stroke="#FF01E576" VerticalAlignment="Bottom" RadiusX="3" RadiusY="3" MouseLeftButtonDown="NoError_btn_MouseLeftButtonDown" />
+        <TextBlock x:Name="NoError_txt" x:FieldModifier="public" HorizontalAlignment="Right" Margin="0,0,11.77,32.15" TextWrapping="Wrap" VerticalAlignment="Bottom" Foreground="#FF37373C" FontWeight="Bold" FontSize="20" Grid.ColumnSpan="2" Width="273.99" MouseRightButtonDown="NoError_txt_MouseRightButtonDown" MouseLeftButtonDown="NoError_txt_MouseLeftButtonDown"><Run Text="File is prote" /><Run Text="ct" /><Run Text="ed" /><Run Text=", close now" /></TextBlock>
+        <Rectangle x:Name="Error_btn" Grid.ColumnSpan="2" x:FieldModifier="public" Fill="#FFE71D20" Height="40" Margin="21.01,0,20,24" Stroke="#FFE71D20" VerticalAlignment="Bottom" RadiusX="3" RadiusY="3" Visibility="Hidden" MouseLeftButtonDown="Error_btn_MouseLeftButtonDown" />
+        <TextBlock x:Name="Error_txt" x:FieldModifier="public" HorizontalAlignment="Right" Margin="0,0,40,32.149" TextWrapping="Wrap" VerticalAlignment="Bottom" Foreground="White" FontWeight="Bold" FontSize="20" Grid.ColumnSpan="2" Width="223.539" Text="Error ! Read the output" Visibility="Hidden" />
+        <Image x:Name="Img_lock" Height="28.28" Margin="10,41,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="28.28" Source="Resources/Lock-25.png" />
+        <TextBlock x:Name="Header_tittle" HorizontalAlignment="Right" Margin="0,43.68,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" FontSize="20" Grid.ColumnSpan="2" Width="258.539" Text="NUTS Obfuscator" />
+        <TextBlock x:Name="Header_txt" HorizontalAlignment="Right" Margin="0,75.28,20,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF7C7A7D" Grid.ColumnSpan="2" Width="280" Text="Don't forget to star the repo !                        The more we are, the better ! :)" FontSize="14" Height="39.72" />
+    </Grid>
+</Window>

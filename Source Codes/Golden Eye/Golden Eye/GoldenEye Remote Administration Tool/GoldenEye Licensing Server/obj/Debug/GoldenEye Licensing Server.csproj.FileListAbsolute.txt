@@ -1,0 +1,11 @@
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Licensing Server\bin\Debug\GoldenEye Licensing Server.exe.config
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Licensing Server\bin\Debug\GoldenEye Licensing Server.exe
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Licensing Server\bin\Debug\GoldenEye Licensing Server.pdb
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Licensing Server\bin\Debug\VelyseTheme.dll
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Licensing Server\obj\Debug\GoldenEye_Licensing_Server.Form1.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Licensing Server\obj\Debug\GoldenEye_Licensing_Server.Properties.Resources.resources
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Licensing Server\obj\Debug\GoldenEye Licensing Server.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Licensing Server\obj\Debug\GoldenEye Licensing Server.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Licensing Server\obj\Debug\GoldenEye Licensing Server.csproj.CopyComplete
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Licensing Server\obj\Debug\GoldenEye Licensing Server.exe
+C:\Users\Admin\Desktop\Golden Eye\GoldenEye Remote Administration Tool\GoldenEye Licensing Server\obj\Debug\GoldenEye Licensing Server.pdb
