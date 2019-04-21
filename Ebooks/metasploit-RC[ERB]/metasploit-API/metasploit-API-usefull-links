@@ -1,0 +1,38 @@
+metasploit-unleashed Writing Meterpreter Scripts
+http://www.offensive-security.com/metasploit-unleashed/Writing_Meterpreter_Scripts
+
+metasploit-unleashed Useful_Functions
+http://www.offensive-security.com/metasploit-unleashed/Useful_Functions
+
+Metasploit Remote API (hd moore)
+https://community.rapid7.com/docs/DOC-1516
+
+Useful_API_Calls (Metasploit Unleashed)
+http://www.offensive-security.com/metasploit-unleashed/Useful_API_Calls
+
+Useful_API_Calls (My pastebin)
+http://pastebin.com/Zhuad5w8
+
+slideshow_API_Calls (remote api)
+http://www.slideshare.net/intrudere/remote-api
+
+Meterpreter API cheat sheet (oldmanlab)
+http://oldmanlab.blogspot.pt/p/meterpreter-api-cheat-sheet.html
+
+writing-a-metasploit-post-exploitation-module
+http://ab0files.com/writing-a-metasploit-post-exploitation-module
+
+Intro to RailGun: WIN API for Meterpreter (mubix)
+http://www.room362.com/blog/2010/07/07/intro-to-railgun-win-api-for-meterpreter/
+
+Railgun to post-exploitation
+https://github.com/rapid7/metasploit-framework/wiki/How-to-use-Railgun-for-Windows-post-exploitation
+
+Documentation for rapid7/metasploit-framework (master)
+http://www.rubydoc.info/github/rapid7/metasploit-framework/index
+
+writing-a-metasploit-post-exploitation-module:
+https://securitycafe.ro/2015/04/06/writing-a-metasploit-post-exploitation-module/
+
+mixins by inserting an "include" statement
+https://www.corelan.be/index.php/2010/10/12/death-of-an-ftp-client/

@@ -1,0 +1,101 @@
+                                               nmap scripting enginne [nse] 4
+                                   -- basic notions of LUA/nseAPI scripting language --
+
+
+
+
+                                             [[ Service/protocol Detection ]]
+ 
+Let's shift our focus to the script's logic contained in the action section. The vulnerability we are trying to identify is in a web application, so the first step would be to identify our fictional ArcticFission application is indeed running on a webserver. In order to perform the detection, I will attempt to retrieve "/arcticfission.html" from a webserver and observe the HTTP return code.
+
+
+
+
+                                     [[ Build arcticfission.html for demonstration ]]
+                                     1º - Build arcticfission.html for demonstration
+
+<html><title>arcticfission 1.2.1</title><body bgcolor="#000000"><br /><br /><font color="#FFFFFF"><center><h1>please install missing plugin!</h1></center></font></html>
+
+                                     2º - copy arcticfission.html to apache2 webroot
+                                     3º - start apache2 service
+
+
+
+
+
+                                              [[ detection.nse script ]]
+----------------------------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+--  THE HEAD SECTION --
+description = [[
+ 
+Author: r00t-3xp10it
+NSE LESSON 4 - my detection nse script
+checks if url: /arcticfission.html its present on target webserver.
+
+Some Syntax examples:
+nmap --script-help detection.nse
+nmap -sS -Pn -p 80 --script detection.nse <target>
+nmap -sS -Pn -p 80 --script discovery <target>
+ 
+]]
+ 
+
+---
+-- @usage
+-- nmap --script-help detection.nse
+-- nmap -sS -Pn -p 80 --script detection.nse <target>
+-- nmap -sS -Pn -p 80 --script discovery <target>
+-- @output
+-- PORT   STATE SERVICE
+-- 80/tcp open  http
+-- | detection:
+-- | index: /arcticfission.html
+-- |   response: 200 FOUND
+-- |   module by: r00t-3xp10it
+-- |_
+---
+
+
+author = "r00t-3xp10it"
+-- Configuring our NSE script in one of these categories allows us to call it
+-- and all other scripts within that same category using --script <category> <target>
+categories = {"discovery", "safe"}
+ 
+ 
+  -- THE DEPENDENCIES SECTION --
+  -- lua libs needed by nmap API programing syntax
+  local http = require "http"                        --> https://nmap.org/nsedoc/lib/http.html
+  local shortport = require "shortport"              --> https://nmap.org/nsedoc/lib/shortport.html
+ 
+ 
+    -- THE RULE SECTION --
+    -- A portrule that matches likely HTTP services.
+    -- Return value: true if the port is likely to be HTTP, false otherwise.
+    portrule = shortport.http                        --> https://nmap.org/nsedoc/lib/shortport.html#http
+ 
+ 
+-- THE ACTION SECTION --
+action = function(host, port)
+
+    -- URL to search in target webserver (uri) 
+    local uri = "/arcticfission.html"
+
+    -- read response from target system
+    local response = http.get(host, port, uri)       --> https://nmap.org/nsedoc/lib/http.html#get
+    -- print display (response) on terminal windows
+    return "\nindex: "..uri.."\n  response: "..response.status.." FOUND\n  module by: r00t-3xp10it\n\n"
+ 
+end
+ 
+----------------------------------------------------------------------------------------------------------------------------
+ 
+COPY SCRIPT TO NMAP DATABASE => sudo cp detection.nse /usr/share/nmap/scripts/detection.nse
+UPDATE NMAP DATABASE => sudo nmap --script-updatedb
+RUN NSE SCRIPT => sudo nmap -sS -Pn -p 80 --script detection.nse <target>
+ 
+
+
+_EOF

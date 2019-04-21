@@ -1,0 +1,98 @@
+                                               nmap scripting enginne [nse] 5
+                                   -- basic notions of LUA/nseAPI scripting language --
+
+
+
+
+                                                [[ Vulnerability Detection ]]
+ 
+Most of the time it is possible to detect a vulnerability by simply detecting service version. In this case, our fictional server returns a banner with the version number. Let's extract the version number from the title and display it in the script's output:
+ 
+
+
+                                                  [[ version.nse script ]]
+----------------------------------------------------------------------------------------------------------------------------
+
+--  THE HEAD SECTION --
+description = [[
+ 
+Author: r00t-3xp10it
+NSE LESSON 5 - my version detection nse script
+retrieves version number from <title> html tag in target webserver
+ 
+Some Syntax examples:
+nmap --script-help version.nse
+nmap -sS -Pn -p 80 --script version.nse <target>
+nmap -sS -Pn -p 80 --script discovery <target>
+ 
+]]
+
+
+---
+-- @usage
+-- nmap --script-help version.nse
+-- nmap -sS -Pn -p 80 --script version.nse <target>
+-- nmap -sS -Pn -p 80 --script discovery <target>
+-- @output
+-- PORT   STATE SERVICE
+-- 80/tcp open  http
+-- | version: 1.2.1 FOUND
+-- |   STATUS: VULNERABLE
+-- |     DATE: 17/06/2016 
+-- |     Author: r00t-3xp10it
+-- |_
+---
+ 
+author = "r00t-3xp10it"
+-- Configuring our NSE script in one of these categories allows us to call it
+-- and all other scripts within that same category using --script <category> <target>
+categories = {"discovery", "safe"}
+
+
+
+  -- THE DEPENDENCIES SECTION --
+  -- lua libs needed by nmap API programing syntax
+  local nmap = require "nmap"                       --> https://nmap.org/nsedoc/lib/nmap.html
+  local http = require "http"                       --> https://nmap.org/nsedoc/lib/http.html
+  local string = require "string"                   --> https://nmap.org/nsedoc/lib/string.html
+  local shortport = require "shortport"             --> https://nmap.org/nsedoc/lib/shortport.html
+
+ 
+    -- THE RULE SECTION --
+    -- A portrule that matches likely HTTP/HTTPS services.
+    -- Return value: true if port:80,443 proto:http,https service:tcp on:open state
+    -- "portrule = shortport.http" --> updated to scan only the selected ports/proto/services/state
+    portrule = shortport.port_or_service({80, 443}, "http, https", "tcp", "open")
+    -- read about 'shortport.port_or_service' lib   --> https://nmap.org/nsedoc/lib/shortport.html#port_or_service
+
+
+ 
+-- THE ACTION SECTION --
+action = function(host, port)
+ 
+    -- Returns date and time in seconds.
+    local now = nmap.clock()                        --> https://nmap.org/nsedoc/lib/nmap.html#clock
+    -- URL to search in target webserver (uri) 
+    local uri = "/arcticfission.html"
+    -- read response from target system
+    local response = http.get(host, port, uri)     --> https://nmap.org/nsedoc/lib/http.html#get
+
+    if ( response.status == 200 ) then
+        --read version number from arcticfission.html webpage
+        local title = string.match(response.body, "<[Tt][Ii][Tt][Ll][Ee][^>]*>arcticFission ([^<]*)</[Tt][Ii][Tt][Ll][Ee]>")
+        -- print version number found (title variable)
+        return title.." FOUND\n  STATUS: VULNERABLE\n    DATE: "..now.."\n    Author: r00t-3xp10it\n\n"
+    else
+        -- print not found response code
+        return "\n  response: "..response.status.."\n  STATUS: NOT FOUND\n    DATE: "..now.."\n    Author: r00t-3xp10it\n\n"
+    end
+end
+----------------------------------------------------------------------------------------------------------------------------
+
+COPY SCRIPT TO NMAP DATABASE => sudo cp version.nse /usr/share/nmap/scripts/version.nse
+UPDATE NMAP DATABASE => sudo nmap --script-updatedb
+RUN NSE SCRIPT => sudo nmap -sS -Pn -p 80 --script version.nse <target>
+
+
+
+_EOF

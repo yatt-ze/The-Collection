@@ -1,0 +1,53 @@
+                                                  [ RC / ERB scripting lesson ]
+
+
+                                                       - FINAL NOTES -
+             All of this its possible thanks to hd moore post on rapid7 "six-ways-to-automate-metasploit"
+             https://community.rapid7.com/community/metasploit/blog/2011/12/08/six-ways-to-automate-metasploit
+
+
+
+
+             List of Msfconsole Core Commands:
+             ---------------------------------
+             https://www.offensive-security.com/metasploit-unleashed/msfconsole-commands/
+
+
+             List of Meterpreter Basic Commands:
+             -----------------------------------
+             https://www.offensive-security.com/metasploit-unleashed/meterpreter-basics/
+
+
+             metasploit-automatizacao-resource-files:
+             ----------------------------------------
+             http://blog.inurl.com.br/2015/02/metasploit-automatizacao-resource-files_23.html
+
+
+             Metasploit Remote API cheat:
+             -----------------------------
+             https://rapid7.github.io/metasploit-framework/api/Metasploit/Framework.html
+
+
+             Useful API Calls (metasploit-unleashed):
+             ----------------------------------------
+             https://www.offensive-security.com/metasploit-unleashed/api-calls/
+
+
+             Remote API User Guide (hd moore):
+             ---------------------------------
+             http://www.slideshare.net/intrudere/remote-api
+
+
+             Metasploit/meterpreter - API calls (netool discution):
+             -------------------------------------------------------
+             https://sourceforge.net/p/netoolsh/discussion/readteam/thread/f456b4a0/
+
+
+             Writing-a-metasploit-post-exploitation-module
+             ---------------------------------------------
+             https://securitycafe.ro/2015/04/06/writing-a-metasploit-post-exploitation-module/
+             
+
+
+
+EOF

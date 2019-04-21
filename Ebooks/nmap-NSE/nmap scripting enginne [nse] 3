@@ -1,0 +1,77 @@
+                                               nmap scripting enginne [nse] 3 
+                                   -- basic notions of LUA/nseAPI scripting language --
+
+
+
+                                 [[ The NSE scripts are (pack) in different categories ]]
+        "auth, broadcast, brute, default, discovery, exploit, external, fuzzer, intrusive, malware, safe, vuln"
+        Configuring our NSE script in one of these categories allows us to call it, and all other scripts within
+        that same category using the 'switch' --script <category> <target>
+
+
+
+                                    [[ The NSE scripts are divided into 4 sections ]]
+        The 'HEAD' contains meta-data that describes the functionality of the module
+        "author, impact, category and other descriptive data".
+
+        The 'DEPENDENCIES' (lua libraries needed) to use nmap API syntax
+
+        The 'RULE SECTION' defines the conditions necessary for the script to run.
+        This section must contain at least one function from this list: "portrule, hostrule, prerule, postrule".
+        For purposes of this tutorial (and most scripts), will focus on "portrule" that can perform checks on
+        both the host and port properties before running the script.
+
+        The 'ACTION SECTION' defines the script logic, In the tradition of K&R (Kernighan & Ritchie)
+        I will just give out "Hello, world!" for any open port HTTP using the API 'return' to display output.
+
+
+
+                                              [[ hello.nse script ]]
+----------------------------------------------------------------------------------------------------------------------------
+ 
+--  THE HEAD SECTION --
+description = [[
+ 
+Author: r00t-3xp10it
+NSE LESSON 3 - my first nse scrip
+ 
+Some Syntax examples:
+nmap --script-help hello.nse
+nmap -sS -Pn -p 80 --script hello.nse <target>
+nmap -sS -Pn -p 80 --script discovery <target>
+ 
+]]
+ 
+author = "r00t-3xp10it"
+-- Configuring our NSE script in one of these categories allows us to call it
+-- and all other scripts within that same category using --script <category> <target>
+categories = {"discovery", "safe"}
+ 
+ 
+  -- THE DEPENDENCIES SECTION --
+  -- lua libs needed by nmap API programing syntax
+  -- In the follow line 'local' defines a local variable named 'http' that requires 'http.lua' library
+  local http = require "http"             --> https://nmap.org/nsedoc/lib/http.html
+  local shortport = require "shortport"   --> https://nmap.org/nsedoc/lib/shortport.html
+ 
+ 
+    -- THE RULE SECTION --
+    -- A portrule that matches likely HTTP services.
+    -- Return value: true if the port is likely to be HTTP, false otherwise.
+    portrule = shortport.http         --> https://nmap.org/nsedoc/lib/shortport.html#http
+ 
+ 
+-- THE ACTION SECTION --
+action = function(host, port)          --> host its the target host-ip inputed | port its the port selected by nmap -p 80 switch
+    return "Hello world!"              --> print "hello world" if found any http port open using 'return' API call
+end
+ 
+----------------------------------------------------------------------------------------------------------------------------
+
+COPY SCRIPT TO NMAP DATABASE => sudo cp hello.nse /usr/share/nmap/scripts/hello.nse
+UPDATE NMAP DATABASE => sudo nmap --script-updatedb
+RUN NSE SCRIPT => sudo nmap -sS -Pn -p 80 --script hello.nse <target>
+
+
+
+_EOF

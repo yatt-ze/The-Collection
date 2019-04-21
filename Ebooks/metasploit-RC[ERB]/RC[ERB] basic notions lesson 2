@@ -1,0 +1,30 @@
+                                              [ RC / ERB scripting lesson 2 ]
+
+
+
+                                                   exercise description:
+                    The following example creates a resource file to display the Metasploit version number, it
+                    also checks if metasploit its connected to postgresql (database) and then exit msfconsole.
+
+
+
+
+
+                    1º open terminal and write:
+                    ---------------------------
+                    touch version.rc
+                    echo 'version' >> version.rc
+                    echo 'db_status' >> version.rc
+                    echo 'exit -y' >> version.rc
+
+
+                    2º run resource file
+                    --------------------
+                    msfconsole -r version.rc
+                    "OR: msfconsole -r /root/version.rc"
+                    "OR: msf > resource /root/version.rc"
+
+
+
+
+EOF

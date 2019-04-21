@@ -1,0 +1,35 @@
+local table = require "table"
+
+
+  local request = {
+    host = host;
+    port = port;
+    submission = submission;
+    mime = mime;
+    name = name;
+    filename = filename;
+    partofrequest = partofrequest;
+    payload = payload;
+    check = check;
+    uploadedpaths = {};
+    success = 0;
+  end;
+
+table.insert(self.uploadedpaths, uploadpath)
+
+
+-- ANOTHER EXAMPLE:
+
+-- form the output using table.insert
+  table.insert(out, string.format("Request         : OPTIONS / HTTP/1.0"))
+  table.insert(out, string.format("Server          : %s", response.header['Server']))
+  table.insert(out, string.format("HostName        : %s (%s)", host.targetname))
+  table.insert(out, string.format("Host            : %s (%s)", host.ip, host.name))
+  table.insert(out, string.format("Port            : %s", port.number))
+  table.insert(out, string.format("Allowed Methods : %s", response.header['allow']))
+  table.insert(out, string.format("Cache-Control   : %s", response.header['Cache-Control']))
+  table.insert(out, string.format(""))
+
+  --display output using stdnse
+  return stdnse.format_output(true, out)            --> https://nmap.org/nsedoc/lib/stdnse.html#format_output
+end

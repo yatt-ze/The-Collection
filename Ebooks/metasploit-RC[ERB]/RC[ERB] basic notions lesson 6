@@ -1,0 +1,21 @@
+                                                 [ RC / ERB scripting lesson 6 ]
+ 
+ 
+ 
+                                                         INTRODUCTION:
+             ERB is a way to embed Ruby code directly into a document. This allows you to call APIs that are not exposed
+             via console commands and to programmatically generate and return a list of commands based on their own logic.
+
+             Basically ERB scripting its the same thing that writing a metasploit module from scratch using "ruby" programing
+             language or the knowledge of metasploit (ruby) API calls (example: client.sys.config.getuid). One of the advantages
+             of using ERB scripting is that we can use simple core/meterpreter commands together with ruby syntax.
+             "Everything writen between the <ruby>...</ruby> tags will be interpreted as ruby code by metasploit"
+
+                         One way to work in "ERB" develop its to call the interactive ruby console "irb"
+                                directly from msfconsole prompt with the follow switch "msf > irb" 
+
+
+
+
+
+EOF

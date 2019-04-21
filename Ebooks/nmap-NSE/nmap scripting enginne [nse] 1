@@ -1,0 +1,27 @@
+                                               nmap scripting enginne [nse] 1
+
+
+                                                    [[ INTRODUCTION ]]
+                 Nmap Scripting Engine (NSE) is one of the most powerful and flexible features in Nmap framework.
+                 It allows users to write (and share) simple scripts to automate a wide variety of networking tasks.
+                 These scripts are run in parallel with the speed and efficiency you expect from Nmap.
+
+                 Users can rely on the growing and diverse scripts database distributed with Nmap, or write your own
+                 to meet your personalized needs, NSE scripts are implemented using Lua programming language, Nmap API
+                 and a number of really powerful NSE lua Libraries...
+                                     
+
+
+                                 [[ The NSE scripts are (pack) in different categories ]]
+        "auth, broadcast, brute, default, discovery, exploit, external, fuzzer, intrusive, malware, safe, vuln"
+
+
+
+                                        [[ learn how to use nsedoc documentation ]]
+                            1º - search for Scripts in nsedoc     --> https://nmap.org/nsedoc/
+                            1º - search for Scripts in Categories --> https://nmap.org/nsedoc/
+                            3º - search for Libraries in nsedoc   --> https://nmap.org/nsedoc/
+
+
+
+_EOF

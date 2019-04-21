@@ -1,0 +1,115 @@
+                                               nmap scripting enginne [nse] 6
+                                   -- basic notions of LUA/nseAPI scripting language --
+
+
+
+                       [[ Attempts to find the HTTP methods available on the target HTTP server ]]
+           In this example, we’ve written a script that should parse all the available HTTP methods that can be run
+           on a specific HTTP server. We can do that by executing the following requests and reading the response
+           from the server: OPTIONS / HTTP/1.0
+
+           When doing this with an NSE script, we need to create a socket that will connect to the target host on
+           port 80 (or some other port), and send the “OPTIONS / HTTP/1.0” command string terminated by CRLF.
+           The server should then respond with all the available HTTP method options that it supports...
+
+
+
+
+
+                                              [[ methods.nse script ]]
+----------------------------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+--  THE HEAD SECTION --
+description = [[
+ 
+Author: r00t-3xp10it
+NSE LESSON 6 - my http method detection nse script
+retrieves information from target server 'header' request field.
+ 
+Some Syntax examples:
+nmap --script-help methods.nse
+nmap -sS -Pn -p 80 --script methods.nse <target>
+nmap -sS -Pn -p 80 --script discovery <target>
+ 
+]]
+
+
+---
+-- @usage
+-- nmap --script-help methods.nse
+-- nmap -sS -Pn -p 80 --script methods.nse <target>
+-- nmap -sS -Pn -p 80 --script discovery <target>
+-- @output
+-- PORT   STATE SERVICE
+-- 80/tcp open  http
+-- | methods:
+-- |   Request         : OPTIONS / HTTP/1.0
+-- |   Server          : xffe
+-- |   HostName        : gentoo-PC
+-- |   Host            : 89.16.167.134 (www.gentoo.org)
+-- |   Port            : 80
+-- |   Allowed Methods : GET,HEAD,POST,OPTIONS
+-- |   Cache-Control   : public, max-age=0
+-- |_
+---
+
+ 
+author = "r00t-3xp10it"
+-- Configuring our NSE script in one of these categories allows us to call it
+-- and all other scripts within that same category using --script <category> <target>
+categories = {"discovery", "safe"}
+
+
+  -- THE DEPENDENCIES SECTION --
+  -- lua libs needed by nmap API programing syntax
+  local http = require "http"
+  local nmap = require "nmap"
+  local stdnse = require "stdnse"
+  local shortport = require "shortport"
+  local table = require "table"
+
+
+    -- THE RULE SECTION --
+    -- A portrule that matches likely HTTP services.
+    -- Return value: true if the port is likely to be HTTP, false otherwise.
+    portrule = shortport.http                       --> https://nmap.org/nsedoc/lib/shortport.html#http
+
+
+-- THE ACTION SECTION --
+action = function(host, port)
+  local out = {}
+
+  -- make the "OPTIONS / HTTP/1.0" request
+  local socket = nmap.new_socket()                  --> https://nmap.org/nsedoc/lib/nmap.html#new_socket
+  socket:connect(host, port)
+  socket:send("OPTIONS / HTTP/1.0\r\n\r\n")
+  s,response = socket:receive()
+  socket:close()
+
+  -- form the output using table.insert
+  table.insert(out, string.format("Request         : OPTIONS / HTTP/1.0"))
+  table.insert(out, string.format("Server          : %s", response.header['Server']))
+  table.insert(out, string.format("HostName        : %s (%s)", host.targetname))
+  table.insert(out, string.format("Host            : %s (%s)", host.ip, host.name))
+  table.insert(out, string.format("Port            : %s", port.number))
+  table.insert(out, string.format("Allowed Methods : %s", response.header['allow']))
+  table.insert(out, string.format("Cache-Control   : %s", response.header['Cache-Control']))
+  table.insert(out, string.format(""))
+
+  --display output using stdnse
+  return stdnse.format_output(true, out)            --> https://nmap.org/nsedoc/lib/stdnse.html#format_output
+end
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+
+COPY SCRIPT TO NMAP DATABASE => sudo cp methods.nse /usr/share/nmap/scripts/methods.nse
+UPDATE NMAP DATABASE => sudo nmap --script-updatedb
+RUN NSE SCRIPT => sudo nmap -sS -Pn -p 80 --script methods.nse <target>
+
+
+
+_EOF

