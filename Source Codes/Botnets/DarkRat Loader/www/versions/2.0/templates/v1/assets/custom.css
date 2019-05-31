@@ -1,0 +1,441 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+body{
+    font-family: 'Lato', 'sans-serif';
+    color: #7d15ba;
+}
+a{
+    color: #7d15ba;
+}
+a:hover{
+    color: #4b146b;
+}
+
+
+/*
+
+//#222437
+color: #606A96;
+
+    */
+html{
+    overflow-x: hidden;
+}
+body{
+    color: white;
+    background: #10111b;
+}
+.navbar-dark{
+    background: #10111b;
+}
+
+.table{
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: none;
+  /*  background: #27293d; */
+    color: white;
+}
+.table td, .table th{
+    border-top: none;
+}
+
+
+.card {
+    background: #27293d;
+    border: 0;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    box-shadow: 0 1px 20px 0 rgba(0,0,0,.1);
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    border-radius: .2857rem;
+}
+.card .card-body {
+    padding: 15px;
+    flex: 1 1 auto;
+    padding-bottom: 0px;
+}
+
+.card .card-footer {
+    padding: 0;
+    background-color: initial;
+    border: 0;
+    padding: 15px;
+    padding-top: 0px;
+}
+.card-stats .numbers {
+    text-align: right;
+}
+.card .card-body .card-category, .card .card-body .card-description {
+    color: hsla(0,0%,100%,.6);
+}
+.card-footer:last-child {
+    border-radius: 0 0 .2232rem .2232rem;
+}
+.card .card-body .card-title {
+    color: #fff;
+    text-transform: inherit;
+    font-weight: 300;
+    margin-bottom: .75rem;
+    margin-top: 0;
+}
+.card-stats .stats {
+    color: hsla(0,0%,100%,.6);
+    margin: 10px 15px;
+    font-size: .9em;
+    margin: 0px;
+}
+
+.card-contributions hr, .card-stats hr {
+    margin: 5px 15px;
+}
+
+.sidebar-nav{
+    border-radius: .2857rem;
+    height: 500px;
+    width: 100%;
+    margin-left: 1rem; 
+    background: #27293d;
+    padding-top: 20px;
+}
+
+.sidebar-nav ul{
+    list-style: none;
+    padding: 0px;
+}
+.sidebar-nav ul li{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.sidebar-nav img{
+    max-width: 50px;
+    width: 100%;
+    height: auto;
+}
+.sidebar-nav img:hover{
+    filter: invert(1);
+}
+
+.bot_table{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.login-table {
+    display:table;
+    text-align:center;
+    width:100%;
+    height:100%;
+    table-layout:fixed;
+}
+.login-cell {
+    display:table-cell;
+    vertical-align:middle;
+}
+.login-form {
+    display:inline-block;
+    width: 450px;
+    padding:50px 0;
+    background: #10111b9d;
+}
+
+.login{
+    background-image: url("img/Splash-PNG-Image-Background-1024x768.png");
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    padding:0px;
+}
+
+
+
+.dark {
+    background: #24252A;
+  }
+  
+  .flex {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  a.bttn {
+    color: #FF0072;
+    text-decoration: none;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s ease all;
+  }
+  a.bttn:hover {
+    color: #FFF;
+  }
+  a.bttn:focus {
+    color: #FFF;
+  }
+  
+  a.bttn-dark {
+    color: #644cad;
+    text-decoration: none;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s ease all;
+  }
+  a.bttn-dark:hover {
+    color: #FFF;
+  }
+  a.bttn-dark:focus {
+    color: #FFF;
+  }
+  
+  .bttn {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    width: 270px;
+    font-weight: bold;
+    padding: 14px 0px;
+    border: 3px solid #FF0072;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  .bttn:before {
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #FF0072;
+    z-index: -2;
+  }
+  .bttn:hover:before {
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  .bttn:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  
+  .bttn-dark {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    width: 270px;
+    font-weight: bold;
+    padding: 14px 0px;
+    border: 3px solid #644cad;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+  }
+  .bttn-dark:before {
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #644cad;
+    z-index: -1;
+  }
+  .bttn-dark:hover:before {
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  .bttn-dark:focus:before {
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  .bttn-dark,.bttn{
+    -webkit-appearance: none;
+  }
+
+  .flag img{
+    margin-bottom: 5px
+  }
+  .operingsystem img{
+   max-width: 120px;
+   width: 100%;
+   height: auto;
+  }
+
+
+.custom-select {
+    display: inline-block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem 1.75rem .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    vertical-align: middle;
+    background-color: #27293d;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.form-control{
+    background-color: #27293d !important;
+}
+
+.botinfo{
+    width: 100%;
+}
+.botinfo .flag{
+    width: 20px;
+    margin-bottom: 3px;
+}
+
+.botinfo img{
+    width: 15px;
+}
+
+.updatecenter{
+        margin-top: 20px;
+}
+
+.multiselect.dropdown-toggle {
+    margin-top: 20px;
+    color: white;
+}
+
+#inputs .form-group label{
+    margin: 0px;
+    text-align: center;
+    width: 100%;
+}
+#inputs .form-check-label{
+    margin-left: 20px;
+}
+
+#inputs .form-check-label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: 20px;
+}
+
+/* Hide the browser's default checkbox */
+#inputs .form-check-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+#inputs .form-check-label:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+#inputs .form-check-label input:checked ~ .checkmark {
+    background-color: #7d15ba;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+#inputs .form-check-label input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+#inputs .form-check-label .checkmark:after {
+    left: 11px;
+    top: 7px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#inputs .form-group .btn-group{
+    width: 100%;
+}
+#inputs .btn-group-vertical>.btn, .btn-group>.btn{
+    flex: 0 1 auto;
+}
+.multiselect.dropdown-toggle{
+    margin: 0px;
+}
+#inputs .bttn{
+    margin-top: 20px;
+}
+
+.multiselect-container.dropdown-menu.show{
+    background: #27293d;
+}
+
+.card .card-body .special .card-title{
+  margin: 0px;
+    font-size: 24.15px
+}
+.card .card-body .special .card-category{
+  margin: 0px;
+}
+
+.createnewUser{
+    margin-left: 40px;
+}
+
+.modal-content {
+    color: white;
+    background: #10111b;
+}
